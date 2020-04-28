@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Padrão em todas as paginas-->
+<head>
+    <script src="https://kit.fontawesome.com/d372d112bf.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detona Gameplays - Seu site de Detonados.</title>
+    <link href="estilo.css" rel="stylesheet">
+    
+</head>
+
+<body onload="volume()">
+    <script>
+        //Arrumar as Funções para ir para as Páginas//
+        function chamar(link) {
+            window.location.href = link;
+        }
+
+        //Ajustando o volume da musica
+        function volume(){
+            var audio;
+            audio = document.getElementById('song');
+            audio.volume = 0.3;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div id="top" class="col-sm-12">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+
+                <div id="icone">
+                    <a class="navbar-brand" href="index.htm"><i class="fas fa-gamepad fa-3x" id="icone"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                </div>
+
+                <div id="titulo">
+
+                    <center>
+                        <a class="navbar-brand" href="index.htm">
+                            <h1>Detona Gameplays</h1>
+                        </a>
+                    </center>
+
+                </div>
+
+            </nav>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-3" id="barraLateral">
+
+                <div class="btn-group-vertical" id="menuDeGames">
+
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Detonados</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('zelda.htm')">Zelda</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mario.htm')">Mario</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('dk.html')">Donkey Kong</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('residentevil.htm')">Resident Evil</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Comandos especiais</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mk2.html')">Mortal Kombat II</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('street2.html')">StreetFighter</button>
+                    
+
+                </div>
+            </div> <!--Fim do Padrão-->
+
+            <!--Variação de Texto/Imagem das paginas-->
+
+            <div class="col-sm-9" id="texto">
+
+                <center>
+                    <img src="StreetII/logo_streetII.png" width="850">
+                    <audio src="StreetII/Guile Theme.mp3" loop="true"autoplay id="song"></audio>
+                    <br>
+                    <br>
+                    <h2>
+                        Street Fighter II 
+                    </h2>
+                    <br>
+                    <br>
+                
+
+                    <h3>
+                        Golpes dos Personagens
+                    </h3>
+                </center>
+                <hr>
+                <p>
+                    <h3>Ryu</h3>
+                    <img src="StreetII/ryu2_street2.gif" width="100"><br>
+                    <h4>
+                        <b>Hadouken:</b> baixo até frente + soco;<br>
+                        <b>Shoryuken (dragon punch):</b> frente, baixo, frente + soco;<br>
+                        <b>Hurricane Kick:</b> baixo, diagonal inferior trás, trás + chute;
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Ken</h3>
+                    <img src="StreetII/ken_street2.gif" width="100"><br>
+                    <h4>
+                        <b>Hadouken:</b> baixo até frente + soco;<br>
+                        <b>Shoryuken (dragon punch):</b> frente, baixo, frente + soco;<br>
+                        <b>Hurricane Kick:</b> baixo, diagonal inferior trás, trás + chute;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Chun-Li</h3>
+                    <img src="StreetII/chunli_street2.gif" width="100">
+                    <h4>
+                        <b>Sankaku Tobi:</b> pule contra o canto da parede e aperte na direção oposta;<br>
+                        <b>Yousou Kyaku:</b> no ar, baixo + chute médio;<br>
+                        <b>Spinning Bird Kick:</b> baixo + cima + chute;<br>
+                        <b>Hyakuretsu Kyaku:</b> aperte chute várias vezes;
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Guile</h3>
+                    <img src="StreetII/guile_street2.gif" width="100">
+                    <h4>
+                        <b>Knee Bazooka:</b> trás, frente + chute médio;<br>
+                        <b>Reverse Spin Kick:</b> trás, frente + chute forte;<br>
+                        <b>Sonic Boom:</b> segure trás, solte pra frente + soco;<br>
+                        <b>Somersault Kick:</b> segure baixo, solte pra cima + chute;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Blanka</h3>
+                    <img src="StreetII/blanka_street2.gif" width="150">
+                    <h4>
+                        <b>Electric Thunder:</b> aperte soco varias e repetidas vezes;
+                        <b>Rolling Attack:</b> segure trás e solte apertando pra frente + soco;
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Dhalsim</h3>
+                    <img src="StreetII/dhalsim_street2.gif" width="100">
+                    <h4>
+                        <b>Drill Zutsuki:</b> no ar, baixo + soco forte;<br>
+                        <b>Drill Kick:</b> no ar, baixo + chute forte;<br>
+                        <b>Yoga Fire:</b> baixo, frente + soco;<br>
+                        <b>Yoga Flame:</b> trás, baixo, frente + soco;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Zangief</h3>
+                    <img src="StreetII/zangief_street2.gif" width="100">
+                    <h4>
+                        <b>Flying Body Attack:</b> no ar, baixo + soco forte;<br>
+                        <b>Double Knee Drop:</b> no ar, baixo + chute fraco ou médio;<br>
+                        <b>Double Lariat:</b> os três botões de soco;<br>
+                        <b>Screw Piledriver:</b> 360 no direcional + soco;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>E.Honda</h3>
+                    <img src="StreetII/honda_street2.gif" width="150">
+                    <h4>
+                        <b>Hyakuretsu Harite:</b> Aperte várias vezes algum botão de soco;<br>
+                        <b>Super Zutsuki:</b> Segure trás depois frente + soco;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Balrog</h3>
+                    <img src="StreetII/balrog_street2.gif" width="100">
+                    <h4>
+                        <b>Dash Straight:</b> Segure pra trás, solte pra frente + soco;<br>
+                        <b>Dash Upper:</b> Segure pra trás, solte pra frente + chute;<br>
+                        <b>Turn Punch:</b> Segure os 3 de soco, ou os 3 de chute por alguns instantes e solte;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Vega</h3>
+                    <img src="StreetII/vega_street2.gif" width="100">
+                    <h4>
+                        <b>Sankaku Tobi:</b> pule contra o canto da tela, depois aperte para o sentido contrário;<br>
+                        <b>Back Slash:</b> duas vezes pra trás;<br>
+                        <b>Rolling Crystal Flash:</b> segure pra trás, solte pra frente + soco;<br>
+                        <b>Flying Barcelona Attack:</b> segure pra baixo, solte pra cima + chute e depois soco;<br>
+                        <b>Izuna Drop:</b> segure pra baixo, solte pra cima + chute e depois (perto do oponente) aperte pra trás, ou frente + soco;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Sagat</h3>
+                    <img src="StreetII/Sagat_street2.gif" width="100">
+                    <h4>
+                        <b>Tiger Shot:</b> baixo, frente + soco;<br>
+                        <b>Ground Tiger Shot:</b> baixo, frente + chute;<br>
+                        <b>Tiger Uppercut:</b> frente, baixo, frente + soco;<br>
+                        <b>Tiger Knee Crush:</b> baixo, frente, direcional superior frente + chute;<br>
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>M.Bison</h3>
+                    <img src="StreetII/mbison_street2.gif" width="150">
+                    <h4>
+                        <b>Psycho Crusher:</b> segure trás, solte pra frente + soco;<br>
+                        <b>Double Knee Press:</b> segure trás, solte pra frente +chute;<br>
+                        <b>Head Press:</b> segure baixo, solte pra cima + chute;<br>
+                        <b>Somersault Skull Diver:</b> após realizar o Head Press, aperte soco quando chegar perto do oponente;<br>
+                    </h4>
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        

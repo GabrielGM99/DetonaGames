@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://kit.fontawesome.com/d372d112bf.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detona Gameplays - Seu site de Detonados.</title>
+    <link href="estilo.css" rel="stylesheet">
+
+</head>
+
+<body onload="volume()">
+    <script>
+        function chamar(link) {
+            window.location.href = link;
+        }
+
+        //Ajustando Volume da Música
+        function volume(){
+            var audio;
+            audio = document.getElementById('song');
+            audio.volume = 0.7;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="top" class="col-sm-12">
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+
+                    <div id="icone">
+                        <a class="navbar-brand" href="index.htm"><i class="fas fa-gamepad fa-3x" id="icone"></i></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                    </div>
+
+
+
+
+
+                    <div id="titulo">
+                        <center>
+                            <a class="navbar-brand" href="index.htm">
+                                <h1>Detona Gameplays</h1>
+                            </a>
+                        </center>
+                    </div>
+
+
+
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-3" id="barraLateral">
+
+                <div class="btn-group-vertical" id="menuDeGames">
+
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Detonados</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('zelda.htm')">Zelda</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mario.htm')">Mario</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('dk.html')">Donkey Kong</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('residentevil.htm')">Resident Evil</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Comandos especiais</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mk2.html')">Mortal Kombat II</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('street2.html')">Street Fighter II</button>
+
+                </div>
+            </div>
+
+            <div class="col-sm-9" id="texto">
+
+
+
+                <div id="divtexto">
+                    <center>
+                        <img src="ResidentEvil/jill_detonado.jpg" id="imagem" width="900" class="bordinha">
+                        <audio src="ResidentEvil/resident.mp3" loop="true" autoplay id="song">
+                            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                            </audio>
+                    </center>
+
+                    <br>
+                    <br>
+                    <center>
+                        <h2 style="color: rgb(197, 174, 110)">Jill Valentine</h2>
+                    </center>
+                    <br>
+
+                    <h3>Parte I: Mansão</h3>
+                    <h4>
+                        <p>
+                            Atravesse a sala de jantar e entre pela porta. Vá para o final do corredor à esquerda para ver o primeiro zumbi. Desvie dele e volte para a sala de jantar. Após a cena, volte para o Hall da mansão e suba as escadas para procurar por Wesker. Volte e fale
+                            com Barry. Ele te dará o Lock Pick. Volte para a sala de jantar (há um Ink Ribbon na mesa) e para o corredor do primeiro zumbi. Pegue o Kenneth’s Film sobre o corpo e entre pela porta ao lado. Siga por este corredor, pegue munição
+                            e ervas, suba a escada e entre pela porta.
+                        </p>
+
+                        <p>
+                            Atravesse esse corredor tomando cuidado com os zumbis. Pegue a Golden Arrow e munição no chão e entre pela porta da direita no final do corredor, que irá ser destrancada. No segundo andar da sala de jantar, pegue a Dagger na parede, mate o zumbi e empurre
+                            para baixo a estátua, que cairá no andar inferior. Abra a porta dupla para voltar ao Hall. Saia pela porta que está ao subir o primeiro lance de escadas. Aqui há dois zumbis. Desça os degraus e pegue a munição de Shotgun perto
+                            do segundo zumbi. Examine a Golden Arrow para obter a Arrowhead e use-a no final do pequeno corredor para revelar uma passagem. Desça a escada e vá para o final da sala para encontrar o Book of Course. Examine a parte de trás do
+                            livro e retire a chave que, ao ser examinada, se tornará Sword Key. Volte para o Hall e entre na pela porta dupla da direita.
+                        </p>
+
+                        <p>
+                            Suba no baú e vá para o fim do corredor, pegue a Dagger e volte. Um zumbi irá aparecer. Você pode matá-lo de cima do baú usando a faca. Empurre o móvel para perto da estátua, pegue o mapa e destranque a porta marrom usando a Sword Key. No novo corredor,
+                            arraste os móveis, pegue munição e uma Dagger e saia pela porta. Entre pela porta verde usando o Lock Pick. No terraço, pegue o Herbicide, algumas ervas, se quiser (não se preocupe com os cachorros) e volte para o corredor. Pela
+                            próxima porta há um banheiro com apenas uma adaga dentro da banheira. Voltando, siga o corredor e entre pela próxima porta. Passe pelo cubículo e, na próxima sala, pege uma Dagger e a Shotgun no quadro. Saia da sala, veja a cena
+                            e entre pela porta dupla. Entre pela próxima porta.
+                        </p>
+
+                        <p>
+                            Mate o zumbi e entre pela porta ao lado. Guarde o Herbicide no baú, pegue o Special instructions when disposing dead bodies no chão, o Fuel Canteen (que pode ser usado para queimar corpos de zumbis mortos antes que eles se tornem zumbis mais fortes, juntamente
+                            com o Isqueiro) e saia da sala. Suba as escadas, vá para a direita e entre pela porta no final do corredor. Pegue o Wooden Mount em cima da mesa e entre pela porta acima. Na nova sala, pegue o Dog Whistle abaixo do abajur, munição,
+                            o Isqueiro (Lighter) e o file Botany. Saia pela outra porta. Siga em frente até o final do corredor e entre pela porta. Aqui há uma erva verde e uma lareira. Acenda a lareira com o Isqueiro e use o Wooden Mount para pegar o mapa
+                            do segundo andar. Saia dessa sala e volte para o corredor onde estava o Wooden Mount anteriormente e use a Sword Key na última porta para voltar ao Hall. Você encontrará Barry e ganhará Acid Shells (munição parada Grenade Launcher).
+                        </p>
+
+                        <p>
+                            Abra a porta dupla para chegar ao segundo andar da sala de jantar e entre pela última porta usando a Sword Key. Entre pela porta verde usando o Lock Pick. Estando na sacada, use o Dog Whistle e dois cerberus irão aparecer. Mate-os e pegue o Collar que
+                            um deles estava carregando. Examine o Collar para descobrir o Coin, e esse por sua vez para revelar a Imitation of a key. Ainda na sacada, você pode destrancar a porta do outro lado que leva para o Hall e usar a caixa de ervas
+                            perto da porta pela qual você entrou. Volte pela porta verde. Siga em frente, ignorando a escada, e entre pela última porta, destrancando-a. Neste corredor, visitado anteriormente, passe por aquele zumbi que estava deitado e entre
+                            pela porta para chegar a um corredor branco. Suba as escadas e pegue a chave no pedestal (Armor Key). Uma armadilha será ativada; basta colocar a Imitation of a key no pedestal. Volte pela porta pela qual você veio, entre pela
+                            porta destrancada e desça as escadas.
+                        </p>
+
+                        <p>
+                            Entre na sala descendo as escadas. Você estará em mais uma sala de save. Leve consigo a Armor Key, a Blue Gemstone e o Herbicide. Saia dessa sala, siga o corredor e entre se quiser na primeira porta usando o Lock Pick. Nessa sala, não pegue a Broken Shotgun;
+                            há um Ink Ribbon, um Battery Pack e um galão de querosene para o seu Cantil. Saia dessa sala e entre na outra usando a Armor Key. Pegue mais um Battery Pack em cima da cômoda, siga em frente até o final do corredor e entre pela
+                            porta. Neste pequeno jardim, use o Herbicide no motor ao lado da porta e coloque a válvula em Red para matar a planta (Se colocar em Green, todas as ervas morrerão). Pegue a Death Mask (Examine-a para se tornar Mask w/ out eyes)
+                            e saia da sala. Ao atravessar o corredor, dois zumbis quebrarão a janela. Siga em frente, ignore o corredor lateral e entre pela próxima porta. Nesse quarto, pegue munição em cima da cama, o Keeper’s Diary na mesa e abra o armário
+                            para encontrar um Battery Pack e um zumbi. Saia do quarto e destranque a porta no final do corredor para voltar ao corredor do primeiro zumbi. Siga pelo caminho acima e destranque a primeira porta com a Armor Key, mas não entre.
+                            Desça as escadas do final do corredor e descarte a Sword Key para ter acesso à cozinha (há apenas uma Dagger).
+                        </p>
+
+                        <p>
+                            Vá para a sala de jantar, em seguida vá para o Hall. Suba as escadas, vá para a direita e destranque a segunda porta com a Armor Key. Pegue a Dagger e a Granade Launcher no corpo do Forest e saia. Entre pela porta ao lado. Destranque a porta dupla do
+                            meio do corredor com a Armor Key e entre. Empurre a segunda estátua da direita, depois primeira da esquerda e então a primeira da direita. Pressione o botão no meio da sala e pegue a Jewelry Box para encontrar dentro dela a Mask
+                            w/ out all.
+                        </p>
+
+                        <p>
+                            Saia dessa sala e destranque a porta anterior com a Armor Key. Você encontrará Richard, que foi envenenado por uma cobra. Você precisa pegar o Serum para ele. Vá ao lugar indicado no mapa para achar o Serum na estante (Hall, segundo andar da sala de jantar,
+                            segunda porta, sala descendo as escadas); aproveite para guardar as máscaras no baú e leve consigo o Isqueiro. Volte e entregue o Serum para Richard. Entre pela próxima porta. Siga pelo corredor lateral e entre pela porta. Acenda
+                            o candelabro com o Isqueiro e pegue munição para Handgun em cima da mesa e no armário. Empurre o outro armário para a direita, entre na passagem revelada (tome cuidado com o zumbi) e pegue o Musical Score (examine-o para Music,
+                            mid-pages).
+                        </p>
+
+                        <p>
+                            Volte para a sala de Richard e em seguida para o corredor. Entre pela penúltima porta. Siga em frente, destranque a porta cinza com a Armor Key e entre. Nesta pequena sala, entre pela porta marrom. No quarto à sua esquerda há um Ink Ribbon, uma erva verde
+                            do lado da cama e um First Aid Box em cima de uma cadeira. Use o Lock Pick e entre pela porta da direita. Receba o Researcher’s Will de Barry e pegue o Fishhook no quadro ao lado do aquário. Pegue a Lure of a bee no quadro ao lado
+                            da estante e combine-a com o Fishhook. Troque a Lure of a bee pela Bee Specimen no quadro ao lado da porta. Coloque a Bee Specimen no quadro que estava a Lure of a bee e pressione o botão. Pegue a Wind Crest e volte para o corredor.
+                            Desça as escadas e entre se quiser na sala de save (Barry deixou Incendiary Shells e um First Aid Spray pra você – aproveite e guarde o Isqueiro e a Wind Crest). Siga pela porta no fim do corredor.
+                        </p>
+
+                        <p>
+                            Siga adiante e descarte a Armor Key pela porta da azul parar poder entrar na galeria. Pressione o botão no primeiro quadro para ele ficar laranja. Dê a volta no corredor e pressione os outros dois botões, de forma que ficarão verde e roxo. Com a ordem
+                            laranja, roxo e verde, pressione o botão na parede do fim do corredor e pegue a Mask w/ out mouth; use o Lock Pick na porta e entre por ela. Você estará no cemitério novamente. Vá para o Hall. Desça as escadas e entre na sala de
+                            jantar. Pegue o Emblem acima da lareira, a Blue Gemstone e entre pela outra porta. Entre pela porta a sua frente e siga pelo corredor lateral e entre na sala. Use a Blue Gemstone no Tigre para pegar munição de Shotgun e volte ao
+                            corredor do primeiro zumbi. Entre pela porta que você destrancou e não entrou anteriormente para chegar a uma sala com um piano. Empurre a estante para encontrar outro Musical Score (Missing Music). Combine o Missing Music com
+                            o Music, mid-pages para obter mais um Musical Score – o completo Moonlight Sonata. Use o Moonlight Sonata no piano. Jill abrirá uma passagem ao tocar corretamente a música. Entre, pegue o Trevor’s diary e o Gold Emblem, colocando
+                            o Emblem no lugar deste. Vá para a sala de jantar e coloque o Gold Emblem no lugar em que o Emblem estava. Vá para o relógio e marque seis horas (basta mover Large duas vezes para o mesmo sentido). Pegue a Shield Key.
+                        </p>
+
+                        <p>
+                            Vá para o Hall, suba as escadas e siga para o corredor em que você pegou o primeiro Musical Score. Suba os degraus e use a Shield Key pela porta, descartando-a. A cobra gigante Yawn irá aparecer. Não é necessário matá-la, apenas desvie dela. No entanto,
+                            se você esperar Richard matá-la, ele irá morrer e você poderá pegar sua Assault Shotgun. Pegue a Mask w/ out nose no canto dessa sala e volte. Se você for envenenado terá que buscar o Serum novamente.
+                        </p>
+
+                        <p>
+                            Saia e volte ao corredor. Entre pela penúltima porta para voltar ao corredor com a escada. Desça e entre na sala com baú ao lado da escada. Pegue todas as suas máscaras, sua Shotgun ou Grenade Launcher, e algumas ervas, preparando-se para o próximo confronto
+                            (continue com a Handgun caso esteja com muita munição). Vá ao corredor da galeria e use o atalho para chegar ao cemitério. Desça as escadas e coloque todas as máscaras em seus devidos lugares. O caixão irá cair e o zumbi irá se
+                            levantar. Mate-o (há mais munição de Shotgun no chão), aperte o botão no caixão para liberar as escadas e pegue o Stone & Metal Object. Volte pelo atalho da galeria e entre pelo portão ao fim do pequeno corredor lateral. Mate o
+                            Cerberus e coloque o Stone & Metal Object ao lado da porta para abri-la.
+                        </p>
+                        <br>
+                    </h4>
+                </div>
+            </div>
+</body>
+
+</html>

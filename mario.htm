@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://kit.fontawesome.com/d372d112bf.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detona Gameplays - Seu site de Detonados.</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+
+<body onload="volume()">
+    <script>
+        function chamar(link) {
+            window.location.href = link;
+        }
+
+        //Ajustando Volume da Música
+        function volume(){
+            var audio;
+            audio = document.getElementById('song');
+            audio.volume = 0.9;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div id="top" class="col-sm-12">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+
+                <div id="icone">
+                    <a class="navbar-brand" href="index.htm"><i class="fas fa-gamepad fa-3x" id="icone"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                </div>
+
+                <div id="titulo">
+
+                    <center>
+                        <a class="navbar-brand" href="index.htm">
+                            <h1>Detona Gameplays</h1>
+                        </a>
+                    </center>
+
+                </div>
+
+            </nav>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-3" id="barraLateral">
+
+                <div class="btn-group-vertical" id="menuDeGames">
+
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Detonados</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('zelda.htm')">Zelda</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mario.htm')">Mario</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('dk.html')">Donkey Kong</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('residentevil.htm')">Resident Evil</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Comandos especiais</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mk2.html')">Mortal Kombat II</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('street2.html')">Street Fighter II</button>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-9" id="texto">
+
+
+
+                <div id="divtexto">
+
+
+                    <center>
+                        <img src="Mario/mario.jpg" width="900" class="bordinha">
+                        <audio src="Mario/mario.mp3" loop="true" autoplay id="song">
+                        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                        </audio>
+                    </center>
+
+                    <br>
+                    <br>
+                    <center>
+                        <h2 style="color: rgb(41, 103, 216)">Super Mario World</h2>
+                    </center>
+                    <br>
+
+
+                    <h4>
+                        <p>
+                            Você começara nesse mapa não ha nenhum segredo por aqui, como se é de esperar a primeira parte do mundo é bem tranquilinha, uma boa para acumular vidas. Dois locais importantes aqui são o Yellow Switch Palace, que distribuí blocos amarelos ao redor do
+                            mundo, e oCastelo #1 onde você enfrentará Iggy Koopa. O mais facil dos irmãos Koopa, ao terminar você terá acesso ao Donut Plains.
+                        </p>
+
+                        <p>
+                            Aqui começa a “chavaiada” e os segredos, logo de cara você já acha uma fase vermelha que indica que existe mais de uma saída. Também há o Castelo #2 Onde você enfebtara Koopa Jr (Facil). Abaixo a lista de chaves da região:
+                        </p>
+
+                        <p>
+                            UDonut Plains #1: a chave está no final da fase, você verá alguns quadrados verdes, se o Green Switch Palace não estiver ativado (provavelmente não estará) os quadrados estarão pontilhados, se o switch estiver ativado, basta seguir correndo, senão pegue
+                            impulso um pouco antes e voe até achar a chave. Você abrirá a Donut Secret #1</p>
+                        </p>
+
+                        <p>
+                            Donut Plains #2: Essa será uma fase subterrânea, você chegara numa parte com umas plataformas amarelas que sobem e descem, se ficar preso nelas ficara esmagado a fase está lotadas dessas plataformas. O melhor ponto de referência para identificar está
+                            parte é que há vários canos no teto. O quarto cano tente entrar nele. Se entrar você estará perto da chave, nesse lugar há um casco azul, estando de Yoshi você pode ganhar asas, estando com asas pode voar. Sem nenhuma das opções
+                            sinto muito é o jeito mais difícil. Pegue o casco azul com o “Y” e mire no bloco mais alto, solte o “Y” pra cima abrirá uma vinha, agora suba os outros blocos como escada (parte chata) e pronto você abrirá o Green Switch Palace</p>
+
+                        <p>
+                            Donut Ghost House: É necessário estar como Super Mario (com a pena) no começo do jogo, pegue impulso e voe pra parede onde começa o jogo. Siga correndo um corredor até o fim, simples não? Você abrirá a fase Top Secret</p>
+
+                    </h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

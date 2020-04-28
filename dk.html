@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Padrão em todas as paginas-->
+<head>
+    <script src="https://kit.fontawesome.com/d372d112bf.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detona Gameplays - Seu site de Detonados.</title>
+    <link href="estilo.css" rel="stylesheet">
+    <embed src="DK/Stickerbrush Symphony.mp3" autostart="true" volume="100" loop="true" hidden="true">
+</head>
+
+<body onload="volume()">
+    <script>
+        
+        //Arrumar as Funções para ir para as Páginas//
+        function chamar(link) {
+            window.location.href = link;
+        }
+
+        //Ajustando o volume da musica
+        function volume(){
+            var audio;
+            audio = document.getElementById('song');
+            audio.volume = 0.5;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div id="top" class="col-sm-12">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+
+                <div id="icone">
+                    <a class="navbar-brand" href="index.htm"><i class="fas fa-gamepad fa-3x" id="icone"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                </div>
+
+
+
+
+
+                <div id="titulo">
+                    <center>
+                        <a class="navbar-brand" href="index.htm">
+                            <h1>Detona Gameplays</h1>
+                        </a>
+                    </center>
+                </div>
+
+
+
+
+            </nav>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-3" id="barraLateral">
+                
+
+                    <div class="btn-group-vertical" id="menuDeGames">
+                
+                        <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Detonados</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('zelda.htm')">Zelda</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mario.htm')">Mario</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('dk.html')">Donkey Kong</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('residentevil.htm')">Resident Evil</button>
+                        <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Comandos especiais</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mk2.html')">Mortal Kombat II</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('street2.html')">Street Fighter II</button>
+
+                    </div>
+                
+
+            </div> 
+            
+            <!--Fim do Padrão-->
+
+            <!--Variação de Texto/Imagem das paginas-->
+            <div class="col-sm-9" id="texto">
+
+                <div id="divtexto">
+
+                    <center>
+                        <img src="DK/Donkeykong1.jpg" id="imagem" class="bordinha" width="900">
+                        <audio src="DK/Donkey Kong Country Theme Restored to HD.mp3" loop="true" autoplay id="song"></audio>
+                    </center>
+                    <br>
+                    <center>
+                        <h2>Donkey Kong Country</h2>
+                    </center>
+                    <!--Titulo-->
+                    <h3>O Jogo</h3>
+                    <!--Primeiro Paragrafo-->
+                    <p> <h4>
+                            Donkey Kong Country é um jogo de plataforma em 2D desenvolvido pela Rare, estrelando o personagem Donkey Kong. 
+                            O jogo foi lançado no Super Nintendo Entertainment System em 1994. Após uma intensa campanha publicitária, 
+                            a versão original para SNES vendeu mais de 9 milhões de cópias, fazendo deste o segundo jogo mais bem vendido para a 
+                            plataforma. Este foi o primeiro jogo Donkey Kong a não ser produzido nem dirigido por Shigeru Miyamoto, o criador do 
+                            personagem; ao invés, o jogo foi produzido por Tim Stamper, embora Miyamoto ainda estivesse envolvido no projeto.
+                            O jogo foi posteriormente adaptado ao Game Boy Color em 2000, ao Game Boy Advance em 2003, e disponibilizado no Virtual 
+                            Console em 2006.
+                        </h4>
+                    </p>
+                    <!-- GIF -->
+                    <p>
+                        <center>
+                            <img src="DK/dk_gif.gif" class="bordinha">
+                        </center>
+                    </p>
+                    <p>
+                        <h4>
+                            Em Donkey Kong Country, Donkey Kong, ao lado de seu sobrinho e companheiro inseparável Diddy Kong, 
+                            devem recuperar as bananas roubadas por King K. Rool e seus capangas, os Kremlings. Após verificar o 
+                            vazio esconderijo de bananas, localizado logo abaixo de sua casa em Kongo Jungle, Donkey Kong embarca em 
+                            uma aventura em sua terra nativa, a Ilha Donkey Kong. Enquanto coleta as bananas nas diferentes regiões 
+                            da ilha, Donkey Kong deve derrotar vários inimigos, incluindo os repteis Kremlings, além de outras 
+                            perigosas criaturas nativas da ilha. Ajudando-o em sua missão estão alguns dos outros Kongs da família: 
+                            Diddy acompanha Donkey Kong em sua aventura, Cranky providencia dicas (e alívio cômico), Candy opera os 
+                            pontos de gravação ao redor da ilha, e Funky oferece meio de transporte. Também apoiando Donkey Kong em 
+                            certas ocasiões estão vários 'colegas animais' (o rinoceronte Rambi, a avestruz Expresso, o peixe-espada 
+                            Enguarde, o sapo Winky, e o papagaio Squawks), cada um com habilidades diferentes. Após superar as 
+                            diferentes áreas da ilha, Donkey Kong finalmente chega ao navio pirata Gangplank Galleon, onde o 
+                            arquirrival de Donkey Kong e líder dos Kremlings, King K. Rool, o aguarda. Após derrotá-lo, o jogo 
+                            termina, com a cena final mostrando o esconderijo de bananas de Donkey Kong em toda sua antiga glória, 
+                            cheia de bananas novamente.
+                        </h4>
+                    </p>
+
+                    <!-- Segundo Paragrafo -->
+                    <p>
+                        <br>
+                        <h3>Personagens</h3>
+                        <br>
+                        <center>
+                            <h3>Donkey Kong III</h3>
+                            <h4 style="text-align: center;">É o protagonista principal do primeiro jogo, tendo como segundo protagonista seu sobrinho,
+                            Diddy Kong.</h4><br>
+                            <img src="DK/DKkong.png"> <br>
+                        </center>
+                    
+                    </p>
+                    <br>
+                    <!--Terceiro Paragrafo-->
+                    <p>
+                        <center>
+                            <h3>Diddy Kong</h3>
+                            <h4 style="text-align: center">Segundo protagonista do primeiro jogo.</h4><br>
+                            <img src="DK/diddykong.png"><br>
+                        </center>
+                    </p>
+                    <br>
+                    <hr>
+                    <p>
+                        <center>
+                            <h3>
+                                É possível alternar entre os 2 protagonista dentro do jogo, cada um com 
+                                suas vantagens.
+                            </h3>
+                            <br>
+                            <img src="DK/mudando_personagem.gif" class="bordinha">
+                        </center>
+                    </p>
+                    <br>
+                    <hr>
+                    
+                    <p>
+                        <center>
+                            <h3>Cranky Kong</h3>
+                            <h4 style="text-align: center">
+                            Durante todo o jogo, ele aparece em certos pontos do mapa para "brigar"
+                            com você, e dar algumas dicas.</h4><br>
+                            <img src="DK/CrankyKong1.png" class="bordinha">
+                        </center>
+                    </p>
+                    <br>
+                    
+                
+                    <p>
+                        <center>
+                            <h3>Candy Kong</h3>
+                            <h4 style="text-align: center">
+                            É Responsável por Salvar seu progresso durante a Gameplay.</h4><br>
+                            <img src="DK/Candy.png">
+                        </center>
+                    </p>
+                    <br>
+
+                    <p>
+                        <center>
+                            <h3>Funky Kong</h3>
+                            <h4 style="text-align: center">
+                            Com ajuda dele, você consegue avançar para o proximo mapa do jogo.</h4><br>
+                            <img src="DK/kong_funky.png">
+                        </center>
+                    </p>
+                    <br>
+
+                    <p>
+                        <center>
+                            <h3>King K. Roll</h3>
+                            <h4 style="text-align: center">
+                            Por fim, o Grande Vilão do Jogo.</h4><br>
+                            <img src="DK/kingkrol.png">
+                        </center>
+                    </p>
+                    <br>
+                    <hr>
+                    <!--Detonado-->
+                    <p id="texto-detonado">
+                            <h4>
+                            <b>Itens que você encontra durante as Fases:</b><br>
+                            <br>
+
+                            <p>
+                                <subtitle class= "negrito">Animais</subtitle> <br>
+                                Existem 5 animais que te ajudam: Enguarde, Expresso, Rambi, Squawks, e Winky. Você os encontra em caixas e pode montá-los, exceto por Squawks. Cada um pode ajudar de alguma forma; Enguarde pode nadar mais rápido; Expresso tem grande velocidade e pode voar uma curta distância; Rambi tem grande força e pode encontrar salas secretas; Squawks ilumina locais escuros; Winky ajuda você a pular mais alto.<br>
+                            </p>
+                            
+
+                            <p>
+                                <subtitle class= "negrito">Animal Tokens</subtitle> <br>
+                                Existe ao menos um em quase todas as Fases. Um animal token é um tipo de moeda com a figura de uma animal. Quando você coleta 3 desses itens você vai para uma área bônus com o animal que você está.<br>
+                            </p>
+                            
+                            
+                            <p>
+                                <subtitle class= "negrito">Balões</subtitle> <br>
+                                Existem 3 tipos: Vermelho, Verde e Azul. 1, 2 e 3 vidas respectivamente.<br>
+                            </p>
+                            
+
+                            <p>
+                                <subtitle class= "negrito">Letras K-O-N-G</subtitle> <br>
+                                Em cada Fase você encontra as letras K, O, N, e G, e formando a palavra você ganha 1 vida. Elas são douradas e geralmente fora do caminho normal e difícil de se pegar.<br>
+                                <center>
+                                    <table>
+                                        <td> <img src="DK/K_-_DKC2.gif" width="50px"> </td>
+                                        <td> <img src="DK/O_-_DKC2.gif" width="50px"> </td>
+                                        <td> <img src="DK/N_-_DKC2.webp" width="50px"> </td>
+                                        <td> <img src="DK/G_-_DKC2.webp" width="50px"> </td>
+                                    </table>
+                                </center>
+                                <br>
+                            </p>
+
+                        <p>
+                            <subtitle class= "negrito">Itens Escondidos</subtitle> <br>
+                            Você facilmente perceberá itens escondidos no chão. Pule de uma plataforma bem alta em cima deles para poder pegá-los.<br>
+                            <br>
+                        </p>
+                        
+                        <hr>
+                            <p id="mundo-1">
+                                <h5>Mundo 1: Kongo Jungle</h5><br>
+                                <center>
+                                    <img src="DK/KongoJungle.jpeg" class="bordinha">
+                                </center>
+                                <br>
+                                <h4>
+                                Fase 1: Jungle Hijinxs<br>
+                                Animais: 1<br>
+                                Rambi, o rinoceronte<br>
+                                <br>
+                            <br>
+                                Balões vermelhos: 4<br>
+                                1. Entre de volta na casa de Donkey e pule para pegar.<br>
+                                2. Volte onde você começou e verá um cacho. Pule de árvore por árvore até pegá-lo.<br>
+                                3. Continue do anterior pulando pelas árvores bem rápido.<br>
+                                4. Na fase bônus no final, vá rápido para pegar.<br>
+                            <br>
+                                Balões verdes: 1<br>
+                                1. (ver 3 anterior) Continue até pegar (muito difícil).<br>
+                            <br>
+                                K - Em cima do primeiro Critter<br>
+                                O - Diagonal do checkpoint<br>
+                                N - Perto de Rambi<br>
+                                G - No topo da árvore perto do final da fas
+                            <br>
+
+                                Fases bônus: 2<br>
+                                1. Use Rambi para quebrar a primeira parede que ver assim que pegá-lo. A caverna tem 40 bananas e q balão vermelho (ver Balões vermelhos 1).<br>
+                                2. Logo após o primeiro bônus, como no anterior, quebre a parede. Este bônus você tem que pular e fazer uma melhor de 3.<br>
+                                <br>
+                                Itens escondidos: 1<br>
+                                1. Barril de aço<br>
+
+                        <br>
+                            
+                                Fase 2: Ropey Rampage<br>
+                                Balões vermelhos: 1<br>
+                                1. Na segunda fase bônus<br>
+                                <br>
+                                K - Pule para a esquerda quando estiver na primeira corda.<br>
+                                O - Acima da primeira fase bônus.<br>
+                                N - Pule da 5ª para a 6ª corda, na 1ª fase bônus.<br>
+                                G - No topo da árvore na saída.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Caia em baixo da letra N.<br>
+                                2. Caia perto da seta.<br>
+                                <br>
+                                Itens escondidos: 2<br>
+                                1. Apenas um pneu para pegar o item 2.<br>
+                                2. Use o pneu para alcançar o topo da árvore. Então caia no chão para ganhar um Token.<br>
+                                <br>
+                                Fase 3: Reptile Rumble<br>
+                                Balões vermelhos: 1<br>
+                                1. Na primeira fase bônus.<br>
+                                <br>
+                                K - À esquerda da 1ª fase bônus.<br>
+                                O - Pule no pneu perto do 1º Zinger.<br>
+                                N - Acima do 2º Zinger.<br>
+                                G - No pneu do meio perto do final.<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Quebre a parede jogando um barril perto da letra K. Tem bananas e 1 balão vermelho.<br>
+                                2. Pule da esquerda para o segundo barril DK para ver.<br>
+                                3. Pegue o barril perto do 2º bônus e vá até alcançar a primeira parede que ver. Desvie de tudo e jogue-o na parede.<br>
+                                <br>
+                                Fase 4: Coral Capers<br>
+                                <br>
+                                Animais: 1<br>
+                                Enquarde, o peixe-espada<br>
+                                <br>
+                                Balões vermelhos: 1<br>
+                                1.Vá à direita do 2º barril DK até não poder ir mais. Agora desça e o verá.<br>
+                                <br>
+                                K - Assim que entrar na fase, vá até não poder ir mais. Agora apenas suba e vai encontrar.<br>
+                                O - Quando ver a segunda seta para baixo, ignore e suba.<br>
+                                N - Vá para cima a partir do 3º barril DK.<br>
+                                G - Vá um pouco a direita da seta final. Agora desça.<br>
+                                <br>
+                                Fase 5: Barrel Cannon Canyon<br>
+                                Balões vermelhos: 2<br>
+                                1. Na 1ª fase bônus.<br>
+                                2. Na 2ª fase bônus.<br>
+                                <br>
+                                K - Suba na caverna de onde você veio, e siga pela passagem onde começou.<br>
+                                O - Esta está bem no caminho.<br>
+                                N - 2º item escondido.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Quando for atirar do último barril, atire na parede.<br>
+                                2. Quando pegar o barril DK perto do checkpoint, não o jogue. Vá para a próxima parede, desvie do Critter e então jogue.<br>
+                                <br>
+                                Itens escondidos: 2<br>
+                                1. Barril DK<br>
+                                2. Letra N<br>
+                                <br>
+                                Salve o jogue e vamos para o primeiro chefe.<br>
+                                <br>
+                                Chefe 1: Very Gnawty's Lair<br>
+                                Pule em sua cabeça para derrotá-lo. Ele fica mais dificíl a cada acerto porque fica cada vez mais rápido e salta mais alto.<br>
+                                <br>
+                            </h4>
+                        </p>
+                        <br>
+                        <hr>
+
+                            <p id="mundo-2"><br>
+                                <h5>Mundo 2: Monkey Mines</h5><br>
+                                <center>
+                                    <img src="DK/MonkeyMines.jpeg" class="bordinha">
+                                </center>
+                                <h4>
+                                Fase 1: Winky's Walkway<br>
+                                Animais: 1<br>
+                                Winky, o sapo<br>
+                                <br>
+                                K - Pule no urubu no começo.<br>
+                                O - Pule na próxima plataforma com Winky.<br>
+                                N - Na fase bônus.<br>
+                                G - Pegue com Winky pulando na plataforma perto da seta.<br>
+                                <br>
+                                Fases bônus: 1<br>
+                                1. Após pegar Winky, pule. Você estará na fase bônus.<br>
+                                <br>
+                                Fase 2: Mine Cart Carnage<br>
+                                Balões vermelhos: 1<br>
+                                1. Pule assim que pegar o caminho de baixo.<br>
+                                <br>
+                                K - No primeiro pulo.<br>
+                                O - Após coletar uma seqüência de 3 bananas esteja preparado para pular.<br>
+                                N - Pule bem rápido no 4º carrinho.<br>
+                                G - Está bem no caminho.<br>
+                                <br>
+                                Fase 3: Bouncy Bananza<br>
+                                Animais: 1<br>
+                                Winky, o sapo<br>
+                                <br>
+                                Balões vermelhos: 1<br>
+                                1. Na 1ª fase bônus.<br>
+                                <br>
+                                K - Use o pneu para pegar.<br>
+                                O - Pelo 2º Zinger.<br>
+                                N - Use o pneu na rocha em movimento. Existe uma parede falsa.<br>
+                                G - Com Winky, pule no meio das 2 paredes.<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Pegue o barril DK.<br>
+                                2. Caia da parede falsa para a direita.<br>
+                                3. Com Winky pule no meio das duas rochas.<br>
+                                <br>
+                                Itens escondidos: 3<br>
+                                1. Acima de onde começou. É Rambi.<br>
+                                2. Na 1ª fase bônus.. É Winky.<br>
+                                3. Pneu.<br>
+                                <br>
+                                Fase 4: Stop and Go Station<br>
+                                K - Após subir algumas estrelas, prepare-se para pular.<br>
+                                O - Quando ver a letra O, role e pule.<br>
+                                N - Apenas pule na plataforma perto dos dois buracos.<br>
+                                G - Apena vá até o final é pegue.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Pegue o barril no checkpoint e continue desviando dos RockKrocs. Agora jogue na parede.<br>
+                                2. Mova o pneu pelo barril DK para a esquerda até ver 3 bananas. Coloque-o na direção das bananas e pule.<br>
+                                <br>
+                                Fase 5: Millstone Mayhem<br>
+                                Animais: 1<br>
+                                Winky, o sapo - Use o pneu para alcançar a borda. Agora pule ao topo e continue andando até ver a caixa do Winky.<br>
+                                <br>
+                                Balões verdes: 1<br>
+                                1. 2ª fase bônus.<br>
+                                <br>
+                                K - Na 1ª fase bônus. Bem à esquerda da fase bônus.<br>
+                                O - Corra e pule no primeiro escorregador.<br>
+                                N - Pule para a direita perto de onde pegou Winky.<br>
+                                G - Pule no urubu.<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Leve o pneu para a esquerda e pule.<br>
+                                2. Pegue o barril e quebre a parede no 1º roda gigante.<br>
+                                3. Pegue o pneu e role até onde você pode ver uma alta plataforma. Pule nela. Pule de novo e pronto!<br>
+                                <br>
+                                Itens escondidos: 1<br>
+                                1. Pule da plataforma mais alta para a mais baixa com um buraco. Certifique-se que pule no buraco. É um pneu.<br>
+                                <br>
+                                Chefe 2: Necky's Nuts<br>
+                                Tudo o que tem a fazer é pular no pneu e esperar para acertá-lo. Repita 4 vezes. Lembre-se que ele fica mais rápido a cada acerto.<br>
+                                </h4>
+                            </p>
+                            <br>
+                            <hr>
+
+                            <p id="mundo-3">
+                                <h5>Mundo 3: Vine Valleys</h5><br>
+                                <center>
+                                    <img src="DK/VineValley.jpeg" class="bordinha">
+                                </center>
+                                <h4>
+                                Fase 1: Vulture Culture<br>
+                                K - 1º item escondido<br>
+                                O - Você verá logo ao matar um Necky<br>
+                                N - 3ª fase bônus<br>
+                                G - No último barril<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Coloque o pneu perto das 3 bananas para cima, pule e vai estar lá.<br>
+                                2. Quando pegar o barril secreto, use-o para quebrar a parede.<br>
+                                <br>
+                                Itens escondidos: 3<br>
+                                Nesta fase é fácil achar os itens porque estão enterrados nas pilhas de palha.<br>
+                                1. Letra K<br>
+                                2. Barril<br>
+                                3. Barril<br>
+                                <br>
+                                Fase 2: Tree Top Town<br>
+                                K - Atire com o barril para chegar a plataforma<br>
+                                O - Pule no barril para atirar. Ele vai atirar você para outro barril. Agora mire para pegar a letra.<br>
+                                N - 2ª fase bônus<br>
+                                G - Mire no urubu<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Pule no Necky para alcançar o canhão. Tente soletrar K-O-N-K<br>
+                                2. Você provavelmente verá uma única banana no fundo da tela. Atire nela e vai ser jogado para a fase bônus<br>
+                                <br>
+                                Fase 3: Forest Frenzy<br>
+                                Balões vermelhos: 1<br>
+                                1. Pelo G<br>
+                                <br>
+                                K - Mova a corda pelo K. Agora role e pule e pegue a corda.<br>
+                                O - Perto de um Zinger Vermelho. Desvie dele quando subir, e rapidamente desça para pegar.<br>
+                                N - Só siga as bananas.<br>
+                                G - Apenas desvie do Zinger.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Grude em baixo da corda perto do G. Parece que vai ser pego por um urubu mais não vai.<br>
+                                2. Perto do seta final você verá um barril. Pegue-o e desvie dos 5 Kritters, então jogue-o na parede à esquerda.<br>
+                                <br>
+                                Itens escondidos: 2<br>
+                                1. Barril DK<br>
+                                2. Barril DK<br>
+                                <br>
+                                Fase 4: Temple Tempest<br>
+                                Animais:1<br>
+                                Expresso, o avestruz<br>
+                                <br>
+                                Balões vermelhos: 1<br>
+                                1. Na 1ª fase bônus.<br>
+                                <br>
+                                K - Em baixo da 2ª corda<br>
+                                O - Balance bem alto a 3ª corda<br>
+                                N - Item escondido<br>
+                                G - Em baixo na última corda você o verá. Pule e vai cair em um canhão<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Carregue o 1º barril DK para a 1ª parede que ver. Quebre-a e entre.<br>
+                                2. Siga a seta de bananas e caia nela.<br>
+                                <br>
+                                Itens escondidos: 1<br>
+                                1. Pule da plataforma alta no buraco. Letra N<br>
+                                <br>
+                                Fase 5: Orang-Utan Gang<br>
+                                Animais: 1<br>
+                                Expresso, o avestruz<br>
+                                <br>
+                                Balões vermelhos: 2<br>
+                                1. Na fase bônus 2<br>
+                                2. Na fase bônus 5<br>
+                                <br>
+                                K - Acima do Zinger vermelho<br>
+                                O - Abaixo de onde encontrou Expresso<br>
+                                N - Na parte mais baixa da fase<br>
+                                G - Escondida na fase bônus<br>
+                                <br>
+                                Fases bônus: 5<br>
+                                1. Vá com Expresso abaixo de onde começou.<br>
+                                2. É abaixo na abertura totalmente a direta. Role para a esquerda no meio do ar.<br>
+                                3 . Não se assuste e caia na precipício perto do pneu. Certifique-se que tenha um barril. Quebre a parede.<br>
+                                4. Na diagonal do 3º bônus. Leve um barril para quebrar. É a letra G.<br>
+                                5. Mate todos os inimigos nesta fase. Agora segure o barril mais próximo e quebre a próxima parede.<br>
+                                <br>
+                                Itens escondidos: 2<br>
+                                1. Enguarde Token - Parte mais alta da fase<br>
+                                2. Barril DK - Parte mais alta da fase<br>
+                                <br>
+                                Fase 6: Clam City<br>
+                                Animais: 1<br>
+                                Enguarde, o peixe-espada<br>
+                                <br>
+                                K - Na parede escondida<br>
+                                O - Suba nas paredes após pegar o 1º barril DK<br>
+                                N - Canto esquerdo à cima depois do 2º barril DK<br>
+                                G - Abaixo do molusco perto do final da fase<br>
+                                <br>
+                                Chefe 3: Bumble B. Rumble<br>
+                                Simplesmente pegue o barril e jogue nele. Após ele começar a te perseguir. Quando ele ficar vermelho você não pode acertá-lo. Espere ele ficar amarelo para acertá-lo de novo.<br>
+                                </h4>
+                            </p>
+                            <br>
+                            <hr>
+
+                            <p id="mundo-4">
+                                <h5>Mundo 4: Gorilla Glacier</h5><br>
+                                <center>
+                                    <img src="DK/Mundo4.jpeg" class="bordinha">
+                                </center>
+                                <h4>
+                                Fase 1: Snow Barrel Blast<br>
+                                Balões vermelhos: 1<br>
+                                1. Pule das árvore nos Necky para alcançar<br>
+                                <br>
+                                Balões azul: 1<br>
+                                1. Pela seta final<br>
+                                <br>
+                                K - Este está certamente visível. Pule e então caia no barril para ganhar tempo<br>
+                                O - Na 2ª área bônus<br>
+                                N - Está bem no caminho<br>
+                                G - No atalho<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Vá ao topo do iglu. Espere pelo Necky e então pule nele.<br>
+                                2. Quando pegar o barril que se move, pule a direita e siga a esquerda. Caia.<br>
+                                3. Caia onde está o N.<br>
+                                <br>
+                                Fase 2: Slipslide Ride<br>
+                                Balões vermelhos: 1<br>
+                                1. Na 1ª fase bônus.<br>
+                                <br>
+                                K - No topo da parede, quando estiver pronto escorregue pela 3ª corda.<br>
+                                O - Pule no Kritter perto do Token do Enguarde para alcançar a corda. Pule para a direita no topo.<br>
+                                N - Pegue a corda com todos os Zingers e suba. Quando subir, você o encontrará com bananas e um barril DK.<br>
+                                G - No topo de uma das últimas cordas.<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. No início você verá um corda, pule nela. Pule na plataforma quando estiver no topo.<br>
+                                2. Pegue o barril no início perto dos Zingers. Pule no fundo com ele. Agora quebra a parede.<br>
+                                3. Quando você passar alguns Zinger observe a corda lá. Você verá que há uma abertura. Suba lá.<br>
+                                <br>
+                                Itens escondidos: 1<br>
+                                1. Token do Enguarde - Caia ou pule no Kritter e então estará lá.<br>
+                                <br>
+                                Fase 3: Ice Age Alley<br>
+                                Quando começar esta fase volte e encontre Expresso.<br>
+                                <br>
+                                Animais: 1<br>
+                                Expresso, o avestruz<br>
+                                <br>
+                                Balões vermelhos: 1<br>
+                                1. 2ª área bônus<br>
+                                <br>
+                                K - Pela caixa do Expresso<br>
+                                O - Faça um roll jump da plataforma a direita.<br>
+                                N - Quando encontrar um Steel Keg volte para a plataforma um pouco atrás e voe com Expresso. Você vai alcançar a plataforma.<br>
+                                G - Pule o mais alto possível e pegue.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Pule nos urubus até alcançar. Na fase bônus.<br>
+                                2. Veja letra N.<br>
+                                <br>
+                                Fase 4: Croctopus Chase<br>
+                                Existe uma maneira de desviar do Croctopus. Esconda-se em uma vala e ele va passar por você, nem mesmo te tocar. De qualquer forma, não o toque.<br>
+                                <br>
+                                Animais: 1<br>
+                                Enguarde, o peixe-espada<br>
+                                <br>
+                                Balões vermelhos: 1<br>
+                                1. Pelo Enguarde<br>
+                                <br>
+                                K - Fácil de pegar. Apenas siga pela direita.<br>
+                                O - Na área secreta. Após pegar o K, vá bem a direita, isso te dá uma melhor chance de encontrar.<br>
+                                N - Difícil de errar. Como a letra K.<br>
+                                G - Na saída.<br>
+                                <br>
+                                Fase 5: Torchlight Trouble<br>
+                                Animais: 1<br>
+                                Squawks o papagaio<br>
+                                <br>
+                                Balões vermelhos: 1<br>
+                                1. Na 1ª fase bônus.<br>
+                                <br>
+                                K - Faça um roll jump no início da plataforma direita.<br>
+                                O - Pule e pegue-o e tente cair na rocha flutuante.<br>
+                                N - Pule para frente e então volte.<br>
+                                G - 2ª fase bônus.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Pegue o barril normal perto do barril DK e jogue-o para trás. Quebre a parede abaixo do barril.<br>
+                                2. Pegue o barril normal perto Mincer. Pule e jogue na parede da esquerda.<br>
+                                <br>
+                                Fase 6: Rope Bridge Rumble<br>
+                                Animais: 1<br>
+                                Winky, o sapo<br>
+                                <br>
+                                K - Pule na abelha onde está o K com Winky. Cuidado para cair de volta onde estava.<br>
+                                O - Faça um roll jump.<br>
+                                N - Pule no pneu, o único problema é cuidar para não cair errado.<br>
+                                G - Faça um roll jump.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Caia entre os 2 pneus.<br>
+                                2. Você provavelmente verá um única banana acima no céu quando estiver na rocha flutuante com um pneu. Pule nele.<br>
+                                <br>
+                                Chefe 4: Really Gnawty Rampage<br>
+                                Como os outros antgeriores, ele vai pular mais alta e fica mais resistente a cada acerto.<br>
+                                </h4>
+                            </p>
+                            <br>
+                            <hr>
+
+                            <p id="mundo-5"> 
+                                <h5>Mundo 5: Kremkroc Industries Inc.</h5><br>
+                                <center>
+                                    <img src="DK/Kremkroc.jpeg" class="bordinha">
+                                </center>
+                                <h4>
+                                Fase 1: Oil Drum Alley<br>
+                                Animais: 1<br>
+                                Rambi, o rinoceronte<br>
+                                <br>
+                                Balões vermelhos: 2<br>
+                                1. Na 1ª fase bônus.<br>
+                                2. Na 2ª fase bônus.<br>
+                                <br>
+                                K - Pule na outra plataforma. Pegue o K no caminho.<br>
+                                O - Mova o pneu embaixo do O. Agora pule.<br>
+                                N - Na 3ª fase bônus.<br>
+                                G - A última letra escondida.<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Pegue o barril TNT e use-o no óleo com bananas abaixo delas.<br>
+                                2. Uma área bônus dupla. Jogue o barril TNT na parede. Agora, tem um segredo nela. Primeiro, pegue o prêmio mais baixo (3 bananas). Um barril vai cair. Jogue-o na parede a direita. Agora tem a 2ª área bõnus. Não erre porque há somente 1 oportunidade.<br>
+                                3. Quando pegar o item escondido, um barril perto do último Mankey Kong, agora desça um passo, jogue o barril na parede.<br>
+                                <br>
+                                Itens escondidos: 7<br>
+                                1. Barril TNT<br>
+                                2. Barril TNT<br>
+                                3. Barril DK<br>
+                                4. Pneu<br>
+                                5. Barril DK<br>
+                                6. Barril normal<br>
+                                7. Letra G<br>
+                                <br>
+                                Fase 2: Trick Track Trek<br>
+                                Balões vermelhos: 1<br>
+                                1. 3ª fase bônus<br>
+                                <br>
+                                K - Tente não acertar os Neckys quando pegar o K.<br>
+                                O - Pule e pegue.<br>
+                                N - Como o O.<br>
+                                G - Pule sobre o Zinger vermelho.<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Fique bem a direita da plataforma e prepare-se para cair na primeira chance e não pule. Você cai bem na canhão.<br>
+                                2. Após pular sobre o Zinger prepare-se para pular no Gnawty. Quando pular onde eles estavam, pule para frente e vai cair num canhão.<br>
+                                3. Role e ataque Mankey Kong no final e vai cair num Token Winky. A direite tem um canhão, pule nele.<br>
+                                <br>
+                                Fase 3: Elevator Antics<br>
+                                Balões verdes: 1<br>
+                                1. 2ª fase bônus<br>
+                                <br>
+                                K - No topo da corda no início<br>
+                                O - 2ª área bônus<br>
+                                N - Na plataforma onde tem um barril de aço, caia para a direita.<br>
+                                G - Em cima da seta final.<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Com Diddy pule de corda para corda, e então suba.<br>
+                                2. Tente pular da última corda pelos 3 grupos de Zingers.<br>
+                                3. Quando estiver no elevador perto da saida apenas fique nele. Você vai chegar numa entrada. Entre e pronto.<br>
+                                <br>
+                                Itens escondidos: 2<br>
+                                1. Bananas<br>
+                                2. Bananas<br>
+                                <br>
+                                Fase 4: Poisoned Pond<br>
+                                É provavelmente a fase de água mais difícil do jogo. Uma dica para ficar mais fácil: volte de onde você começou.<br>
+                                <br>
+                                Animais: 1<br>
+                                Enguarde, o peixe-espada<br>
+                                <br>
+                                K - Acima de onde você começa<br>
+                                O - Você verá na sua frente<br>
+                                N - Em cima do buraco menor<br>
+                                G - Você verá na sua frente<br>
+                                <br>
+                                Fase 5: Minecart Madness<br>
+                                Balões vermelhos: 1<br>
+                                1. Na 1ª fase bônus<br>
+                                <br>
+                                K - Na corda<br>
+                                O - Pule no grupo de Neckys para alcançar<br>
+                                N - Pule fora do carrinho quando for pegar o N<br>
+                                G - Pule no Pneu<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Quando estiver na parte mais alta da fase fique pulando e eventualmente vai acertar um canhão<br>
+                                2. Pule do carrinho quando estiver na parte mais alta do monte e então caia no pneu. Pule no canhão.<br>
+                                3. Pule do carrinho quando ver um grupo de pneus. Tente cair em um. Agora, siga acima no canhão.<br>
+                                <br>
+                                Fase 6: Blackout Basement<br>
+                                K - Assim que pular para a próxima plataforma pegue este durante o caminho<br>
+                                O - 1ª item escondido<br>
+                                N - Na 1ª fase bônus<br>
+                                G - Algum lugar perto da seta final<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Na última plataforma em queda, não pule dela. Fique e vai cair num canhão.<br>
+                                2. Quando você pegar o barril de aço vá a direita e jogue na parede. Pule e você pode ir para o final da fase e também quebre a parede para abrir outra área bônus.<br>
+                                <br>
+                                Chefe 5: Boss Dumb Drum<br>
+                                Preste atenção quando ele pisar, fique indo da esquerda para a direita. Ele vai jogar um inimigo. Mate-o e então ele vai fazer de novo e de novo. É melhor se você usar Donkey na maioria do tempo. Alguns inimigos Diddy não pode matar. Esse chefe joga os inimigos na ordem: 2 Slippas, 2 Trap-Claps, 2 Klumps, e 2 Armys.<br>
+                                <h4>
+                            </p>
+                            <br>
+                            <hr>
+
+                            <p id="mundo-6">
+                                <h5>Mundo 6: Chimp Caverns</h5><br>
+                                <center>
+                                    <img src="DK/ChimpCaverns.jpeg" class="bordinha">
+                                </center>
+                                <h4>
+                                Fase 1: Tanked Up Trouble<br>
+                                Balões vermelhos: 1<br>
+                                1. Na 1ª fase bônus.<br>
+                                <br>
+                                K - Pule no Necky para pegar<br>
+                                O - Na pequena plataforma a direita com um Kritter. Pule do Kritter e pegue o O e volte bem rápido.<br>
+                                N - Desça na plataforma flutuante. Certifique-se ter um pneus para fazer isso. Agora pule no pneu entre os dois Zingers para pegar o combustível.<br>
+                                G - Pule no Zinger vermelho.<br>
+                                <br>
+                                Fases bônus: 1<br>
+                                1. Pule da plataforma no canhão quando ele estiver na vertical<br>
+                                <br>
+                                Fase 2: Manic Mincers<br>
+                                Animais: 1<br>
+                                Rambi, o rinoceronte<br>
+                                <br>
+                                Balões vermelhos: 2<br>
+                                1. Na 1ª fase bônus<br>
+                                2. 3ª fase bônus<br>
+                                <br>
+                                K - Abaixo do 3º Mincer<br>
+                                O - Entre 2 Mincers<br>
+                                N - Pule na plataforma flutuante<br>
+                                G - 2ª fase fônus<br>
+                                <br>
+                                Fases bônus: 3<br>
+                                1. Você pode ir com Rambi ou jogar um barril TNT<br>
+                                2. Simplesmente ande na entrada<br>
+                                3. Pegue o TNT perto do barril DK e pule da borda. Jogue-o na parede.<br>
+                                <br>
+                                Fase 3: Misty Mine<br>
+                                K - Na 1ª fase bônus.<br>
+                                O - Na 1ª fase bônus.<br>
+                                N - Na 1ª fase bônus.<br>
+                                G - Na 1ª fase bônus.<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Após o barril em movimento segure na corde e desça tudo.<br>
+                                2. Quando pegar o TNT com Diddy, corra todo o caminho para baixo até chegar na parede e jogue.<br>
+                                <br>
+                                Fase 4: Loopy Lighs<br>
+                                Balões vermelhos: 1<br>
+                                1. pelo Token do Expresso<br>
+                                <br>
+                                K - Na 1ª fase bônus<br>
+                                O - Faça um roll jump<br>
+                                N - Pelo Token do Expresso<br>
+                                G - Pule para pegar<br>
+                                <br>
+                                Fases bônus: 1<br>
+                                1. Pule para baixo onde estão as bananas<br>
+                                <br>
+                                Fase 5: Platform Perils<br>
+                                K - Pule para pegar<br>
+                                O - Pule quando estiver para cair<br>
+                                N - Tente não pular muito alto para não ser pelo pelo Zinger<br>
+                                G - Pule para pegar<br>
+                                <br>
+                                Fases bônus: 2<br>
+                                1. Role para pegar<br>
+                                2. Não pule quando a plataforma cair<br>
+                                <br>
+                                Chefe 6: Necky's Revenge<br>
+                                Ele está de volta e mais poderoso. Fique pulando nele para derrotá-lo. Quando fizer umas 5 vezes você vence.<br>
+                                <br>
+                                <h4>
+                            </p>
+                            <br>
+                            <hr>
+                            <p id="KingKRoll">
+                                <h5>King K. Rools Ship</h5><br>
+                                <center>
+                                    <img src="DK/Kingkroll_ship.jpg" class="bordinha">
+                                </center><br>
+                                <h4>
+                                Ele começa jogando sua coroa. Desvie e pule na sua cabeça. Ele corre em cima de você, pule sobre ele. Pule na cabeça de novo e ele vai correr em você duas vezes. Pule sobre ele de novo. Pule sobre a coroa de novo e pule na sua cabeça. Desta vez ele vai correr em você 3 vezes. Pule sobre ele todas elas, e prepare-se para sua coroa. Agora ele vai fazer algo diferente. Ele vai fazer cair bolas de cima, e então vai jogar sua cora mais rápido.<br>
+                                Pule nele e repita até pular nele pela 6ª vez e então... pronto? Ele vai mostrar os créditos com "K".<br>
+                                <br>
+                                Final?<br>
+                                Parecendo divertido? Bem, depois King K. Rool começa a acordar e desta vez ele vai pular em você. Você sabe o que fazer certo? Após vencê-lo Cranky quer falar com você. E diz...<br>
+                                <br>
+                                Muito bem, Donkey meu garoto. Quem imaginaria que um sonhador como você pudesse derrotar esse bando de Kremlings? Você deixou este velho orgulhoso! Vá ver suas coisas, eu acho que vai ficar surpreso. Se eu estivesse brincando eu teria encontrado tudo! Eu estou certo que existe algumas salas bônus que você não encontrou.<br>
+                                <br>
+                                Então você sai e vê seu estoque de bananas. Está cheio de bananas. Então os verdadeiros créditos começam.<br>
+                                <h4>
+                                <br>
+                                <center>
+                                    <img src="DK/DK_zeramento.gif" class="bordinha">
+                                </center>
+                            </p>
+                            <br>
+                        </h4>
+                    </p>
+                </div>
+            </div>
+</body>
+
+</html>

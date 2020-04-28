@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://kit.fontawesome.com/d372d112bf.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detona Gameplays - Seu site de Detonados.</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        function chamar(link) {
+            window.location.href = link;
+        }
+
+        //Ajustando o volume da musica
+        function volume(){
+            var audio;
+            audio = document.getElementById('song');
+            audio.volume = 1.0;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div id="top" class="col-sm-12">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+
+                <div id="icone">
+                    <a class="navbar-brand" href="index.htm"><i class="fas fa-gamepad fa-3x" id="icone"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                </div>
+
+                <div id="titulo">
+
+                    <center>
+                        <a class="navbar-brand" href="index.htm">
+                            <h1>Detona Gameplays</h1>
+                        </a>
+                    </center>
+
+                </div>
+
+            </nav>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-3" id="barraLateral">
+
+                <div class="btn-group-vertical" id="menuDeGames">
+
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Detonados</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('zelda.htm')">Zelda</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mario.htm')">Mario</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('dk.html')">Donkey Kong</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('residentevil.htm')">Resident Evil</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Comandos especiais</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mk2.html')">Mortal Kombat II</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('street2.html')">Street Fighter II</button>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-9" id="texto">
+
+
+
+                <div id="divtexto">
+
+
+                    <center>
+                        <img src="Zelda/zelda.jpg" width="900" class="bordinha">
+                        <audio src="Zelda/zelda.mp3" loop="true" autoplay id="song">
+                        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                        </audio>
+                    </center>
+
+                    <br>
+                    <br>
+                    <center>
+                        <h2 style="color: rgb(58, 226, 58)">Ocarina of Time - IGN (10/10)</h2>
+                    </center>
+                    <br>
+
+                    <h3 style="color: rgb(45, 175, 45)">Kokiri Forest:</h3>
+
+                    <h4>
+                        <p>
+                            Ao tomar o controle de Link, saia da casa e fale com Saria. Suba pelo caminho à esquerda da casa e entre pelo pequeno buraco. Espere a grande pedra redonda passar, entre no primeiro corredor à direita, depois à esquerda e à direita para encontrar um baú
+                            com a Kokiri Sword. Para equipá-la, vá em Gear na tela inferior e selecione a espada. Agora retorne, entre nas casas e abra os baús. Comece a arremessar pedras e a cortar as plantas até conseguir 40 rupees. Aproxime-se da loja
+                            (Kokiri Shop), o local em que há uma garota no alto, pressione o botão ‘L’ para travar a mira nela (Navi ficará rodeando-a) e pressione ‘A’ para falar com ela. Entre na loja e compre o Deku Shield. Você deverá utilizá-lo pressionando
+                            o botão ‘R’ para se defender. Saia da loja, vá para a esquerda e fale com Mido. Após ele te deixar passar, mate as Deku Babas e pegue o Deku Stick. Aproxime-se da grande árvore. Após a cena, entre pela passagem que se abriu.
+                        </p>
+                    </h4>
+                        <br>
+
+                        <h3 style="color: rgb(45, 175, 45)">Inside the Deku Tree:</h3>
+
+                        <br>
+
+                    <h4>
+                        <p>
+                            Mate as Deku Babas e ganhará Deku Nuts. Ele será utilizado para congelar os inimigos por um pequeno período de tempo. Suba pela escada, salte para o caminho à frente (basta manter o circle-pad para a direção desejada que Link pula automaticamente) e avance.
+                            Abra o baú, pegue o Dungeon Map, salte para o caminho adiante e entre pela porta. Pressione o botão ‘L’ para travar a mira nele e use o escudo para rebater o nut que ele cospe em você. Quando ele sair pulando do buraco, vá atrás
+                            dele e acerte uma espadada. Saia pela porta, corra e pule na plataforma, seguindo o local com o baú. Se cair, suba pela trepadeira na parede. Pegue o Fairy Slingshot. Equipe-o, mova o 3DS para mirar e dispare na escada do lado
+                            oposto. Na parede à esquerda do baú, suba pela trepadeira e abra o baú com um Recovery Heart. Retorne até o local do baú onde conseguiu o Dungeon Map, dispare contra as aranhas no alto, escale a parede e caia à direita. Procure
+                            por uma porta e entre. Pise no botão para elevar plataformas e pule sobre elas até o canto esquerdo. Haverá um baú com um Recovery Heart e uma Gold Skulltula atrás. Mate-a e pegue o token. Caia, suba pela direita, pise no botão
+                            novamente pulando em direção ao fundo onde está o grande baú com a bússola. Retorne até onde está o botão, aproxime-se da tocha, pegue um Deku Stick, encoste-o na chama e acenda a tocha que está apagada. Saia pela porta, mate a
+                            Big Skulltula (acerte-a somente quando ela estiver de costas) e salte daí para cair na teia para estourá-la descendo até o andar B1. Mate a Deku Baba e note a Gold Skulltula no alto. Mate-a com o estilingue e escale a parede para
+                            pegar o token. Na grade, próximo ao botão, há outra Gold Skulltula. Mate-a, suba na elevação ao lado e salte na direção do token para pegá-lo. Pise no botão para acender a tocha e abra o baú atrás dela. Agora,pegue um Deku Stick
+                            e leve-o com chama até a porta com a teia de aranha para queimá-la (note que na água há partes rasas pelo qual você pode andar). Entre na porta, use o escudo para rebater o Nut que o Deku arremessa e aproxime-se dele. Ele lhe dirá
+                            o número da ordem: 2, 3 e 1. Use o estilingue no olho sobre a porta e avance. Vá pela água e, no canto esquerdo da área, note o botão no fundo da água. Mergulhe e acerte-o para ativá-lo, retorne a elevação, volte na plataforma
+                            que se move e vá para a outra área. Mate a aranha, empurre a caixa para a direita, suba nela e prossiga. Na nova área, use o Deku Stick para acender as duas tochas e avance. Mate a Big Skulltula e os Gohma Larvas. Use o Deku Stick
+                            e queime as duas teias. Note que, em uma delas, há uma Deku baba e uma parede. Guarde bem este local, será preciso voltar se quiser matar todas as Skulltulas. Entre pela pequena passagem, empurre o bloco, pule para o lado oposto,
+                            com o Deku Stick para pegar a chama e leve até o local com a teia no chão e mova-a para queimá-la. Caia. Lembra-se do número da ordem que aquele Deku te disse? Pois bem: 2, 3 e 1. Então, rebata o nut que o Deku do centro cuspir,
+                            depois o que está à direita e por último o que está a esquerda. Ele começará a pular, aproxime-se dele e tente dar uma espadada e ele irá falar com você. Entre pela porta.
+                        </p>
+                    </h4>
+
+                        <br>
+                        <h3 style="color: rgb(199, 31, 45)">Boss: Parasitic Armored Arachnid Gohma</h3>
+                        
+                    <h4> 
+                        <p>
+                            Use a visão de primeira pessoa e olhe no teto do local. Após a cena, a batalha começará. Quando o olho dele ficar vermelho, dispare com o estilingue e na sequência acerte quantas espadadas puder. Gohma subirá pela parede. Se você não acertar o olho dele,
+                            ele invocará filhotes para atacá-lo. Quando ele estiver no teto, use o estilingue para acertar o olho do chefe e dê quantas espadadas puder. Repita o processoaté matá-lo. Após destruí-lo, pegue o Heart Container e entre no local
+                            com a luz azul. Após a cena e ao receber a Kokiri’s Emerald, fale com Mido e saia pela passagem do lado oposto para outra cena. Você ganhará a Fairy Ocarina de Saria. Avance e falará com a coruja Kaepora Gaebora. Siga em direção
+                            ao castelo (caso anoiteça, você enfrentará caveiras e terá que esperar até amanhecer para poder entrar nele). Siga para a esquerda e estará em Hyrule Market. Siga ao lado oposto e chegará em Hyrule Castle.
+                        </p>
+
+                        <br>
+                    </h4>
+                        
+                        <h3 style="color: rgb(45, 175, 45)">Inside the Deku Tree:</h3>
+
+                    <h4>
+                        <p>
+                            Você irá falar com a coruja. Note que o guarda não deixará você passar. Na parede do lado direito, há uma trepadeira para você escalar. Suba, caia pelo buraco e saia pela porta. Avance pelo morro, mas não suba. Você terá que passar pelos guardas sem ser
+                            notado. Suba à esquerda dos dois guardas que ficam no caminho de terra e siga pelo centro da área até a parede do lado esquerdo. Escale-a, salte na água e suba pela elevação próxima a arvore. Siga para a esquerda e haverá um homem
+                            dormindo, impedindo você de empurrar as caixas. Retorne, aproxime-se de um guarda para ser retirado do castelo. Aproxime-se da trepadeira e encontrará Malon. Fale com ela para receber um Weird Egg. Equipe-o na tela inferior e volte
+                            até onde está o homem dormindo. Você terá que esperar amanhecer para o ovo chocar. Aproxime-se do homem dormindo, use a galinha para acordá-lo e após a cena, empurre as caixas para o canto inferior esquerdo, suba nelas e salte
+                            adiante para entrar na pequena passagem. Dentro do jardim do castelo, você precisará passar pelos guardas sem ser visto. O esquema é simples: é só esperar eles se posicionarem de um lado e passar pelo outro. Uma dica é manter certa
+                            distância deles, pois assim eles não te notarão. Passando pelas cinco áreas, entre a esquerda e fale com Zelda. Após o papo, receberá a Zelda’s Letter. Fale com Impa e aprenderá Zelda’s Lullaby. Não vá para Kakariko Village. Antes
+                            disso, siga para Lon Lon Ranch, o local que fica mais ao centro de Hyrule Field. Siga ao centro do Rancho, onde está Malon. Fale com ela três vezes e após a terceira fala dela, toque na Ocarina na tela inferior para ela te ensinar
+                            Epona’s Song. Por enquanto, este som não terá utilidade (mas você pode tocá-lo perto de uma vaca e se tiver um bottle vazio, ganhará leite). Agora, vá para Kakariko Village.
+                        </p>
+
+                        <p>
+                            Vá para o Graveyard (o cemitério que fica ao fundo da vila). Puxe o segundo túmulo da esquerda para a direita da sequência que fica atrás do grande túmulo, caia no buraco e pegue o Hylian Shield. Saia pelo feixe de luz, siga ao fundo, onde está a grande
+                            tumba e o que Zelda’s Lullaby com a Ocarina sobre o símbolo da Triforce e, após a cena, caia pelo buraco.
+                        </p>
+                        <br>
+                    </h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

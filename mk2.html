@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Padrão em todas as paginas-->
+<head>
+    <script src="https://kit.fontawesome.com/d372d112bf.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detona Gameplays - Seu site de Detonados.</title>
+    <link href="estilo.css" rel="stylesheet">
+    <style>
+        
+        table{
+            border: 5px solid antiquewhite;
+            text-align: center;
+            color: rgb(245, 52, 52);
+        }
+
+        th{
+            border: 5px solid antiquewhite;
+            text-align: center;
+            width: 200px;
+        }
+
+        td{
+            border: 2px solid antiquewhite;
+            text-align: center;
+            color: yellow;
+            font-weight: bold;
+        }
+
+
+    </style>
+
+</head>
+
+<body onload="volume()">
+    <script>
+        //Arrumar as Funções para ir para as Páginas//
+        function chamar(link) {
+            window.location.href = link;
+        }
+
+        //Ajustando o volume da musica
+        function volume(){
+            var audio;
+            audio = document.getElementById('song');
+            audio.volume = 0.3;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div id="top" class="col-sm-12">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+
+                <div id="icone">
+                    <a class="navbar-brand" href="index.htm"><i class="fas fa-gamepad fa-3x" id="icone"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                </div>
+
+
+
+
+
+                <div id="titulo">
+                    <center>
+                        <a class="navbar-brand" href="index.htm">
+                            <h1>Detona Gameplays</h1>
+                        </a>
+                    </center>
+                </div>
+
+
+
+
+            </nav>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-3" id="barraLateral">
+
+                <div class="btn-group-vertical" id="menuDeGames">
+
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Detonados</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('zelda.htm')">Zelda</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mario.htm')">Mario</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('dk.html')">Donkey Kong</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('residentevil.htm')">Resident Evil</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled id="botaodisable">Comandos especiais</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('mk2.html')">Mortal Kombat II</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="chamar('street2.html')">Street Fighter II</button>
+
+                </div>
+            </div> <!--Fim do Padrão-->
+
+            <!--Variação de Texto/Imagem das paginas-->
+
+            <div class="col-sm-9" id="texto">
+
+                <center>
+                    <img src="MK/logo-mkii2.png" width="900">
+                    <audio src="MK/mortal-kombat-theme-song-original.mp3" loop="true"autoplay id="song"></audio>
+                    <br>
+
+                    <h2>
+                        Mortal Kombat II - Fatalities 
+                    </h2>
+                    <br>
+                    <br>
+                
+
+                    <h3>
+                        Comandos
+                    </h3>
+                </center>
+                    <br>
+                <div id="tabelacomandos">
+                    <center>
+                        <table>
+                            <thead width="100px">
+                                <th>Botões</th>
+                                <th>Como Aparece</th>
+                            </thead>
+                            <tbody>
+                                <td>Frente</td>
+                                <td>F</td>
+                            </tbody>
+                            <tbody>
+                                <td>Baixo</td>
+                                <td>D</td>
+                            </tbody>
+                            <tbody>
+                                <td>Trás</td>
+                                <td>B</td>
+                            </tbody>
+                            <tbody>
+                                <td>Cima</td>
+                                <td>U</td>
+                            </tbody>
+                            <tbody>
+                                <td>Soco Alto</td>
+                                <td>HP</td>
+                            </tbody>
+                            <tbody>
+                                <td>Soco Baixo</td>
+                                <td>LP</td>
+                            </tbody>
+                            <tbody>
+                                <td>Block</td>
+                                <td>BLK</td>
+                            </tbody>
+                            <tbody>
+                                <td>Chute Alto</td>
+                                <td>HK</td>
+                            </tbody>
+                            <tbody>
+                                <td>Chute Baixo</td>
+                                <td>LK</td>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+                <br>
+                
+                <p>
+                    <h2>Personagens</h2>
+                </p>
+                
+                <br>
+                <p>
+                    <h3>Liu Kang</h3>
+                    <img src="MK/Liu_Kang_MK2.gif" width="100px">
+                    <h4>
+                        <b>Fatality Dragon:</b> D, F, B, B, HK <br>
+                        <b>Uppercut:</b> Segure Block e rotacione 360 graus para o lado oposto do adversário
+                    </h4>
+                </p>
+                <hr>
+                
+                <p>
+                    <h3>Kung Lao</h3>
+                    <img src="MK/Kung_Lao_MK2.gif" width="100px">
+                    <h4>
+                        <b>Hat Slice:</b> F, F, F, LK <br>
+                        <b>Hat Decapitation:</b> Segure LP, B, F, Solte LP e aperte Up assim que o chapéu atingir o pescoço do adversário.
+                    </h4>
+                </p>
+                <hr>
+                
+                <p>
+                    <h3>Joony Cage</h3>
+                    <img src="MK/Joony_Cage_MK2.gif" width="100px">
+                    <h4>
+                        <b>Torso Rip:</b> D, D, F, F, LP <br>
+                        <b>Uppercut Decapitation:</b> F, F, D, U <br>
+                        <b>Knock Off Three Heads:</b> Segure LP, LK, BLK, depois faça o fatality Uppercut Decaptation.
+                    </h4>
+                </p>
+                <hr>
+                
+                <p>
+                    <h3>Reptile</h3>
+                    <img src="MK/Reptile_MK2.gif" width="100px">
+                    <h4>
+                        <b>Tounge Lash:</b> B, B, D, LP <br>
+                        <b>Invisible Slice:</b> F, F, D, HK - Você deve estar invisível
+                    </h4>
+                </p>
+                <hr>
+                <p>
+                    <h3>Sub-Zero</h3>
+                    <img src="MK/Sub_zero_MK2.gif" width="100px">
+                    <h4>
+                        <b>Ice Shatter:</b> F, F, D, Hk (distância de uma rasteira) Então F, D, F, F, HP (perto)<br>
+                        <b>Ice Grenade:</b> Segure LP, B, B, D, F, Solte LP
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Shang-Tsung</h3>
+                    <img src="MK/Shang_Tsung_MK2.gif" width="100px">
+                    <h4>
+                        <b>Inner Ear:</b> Segure HK por 3 seconds e solte HK (distância de uma rasteira).<br>
+                        <b>Soul Steal:</b> Hold Blk, U, D, U, LK (perto).<br>
+                        <b>Kintaro Morph:</b> Segure LP por 30 segundos durante a partida e solte LP (distância de uma rasteira).
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Kitana</h3>
+                    <img src="MK/Kitana_MK2.gif" width="100px">
+                    <h4>
+                        <b>Kiss of Death:</b> Segure LK, F, F, D, F, Solte LK (perto).<br>
+                        <b>Fan Decapitation:</b> Blk, Blk, Blk, Blk, HK (perto).
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Jax</h3>
+                    <img src="MK/Jax_MK2.gif" width="100px">
+                    <h4>
+                        <b>Head Clap:</b> Segure LP, F, F, F, Solte LP (perto).<br>
+                        <b>Arm Rip:</b> Blk, Blk, Blk, Blk, LP (distância de uma rasteira).
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Mileena</h3>
+                    <img src="MK/Mileena_MK2.gif" width="100px">
+                    <h4>
+                        <b>Surgery:</b> F, B, F, LP (perto).<br>
+                        <b>Man Eater:</b> Segure HK por 3 segundos e solte (perto)
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Baraka</h3>
+                    <img src="MK/Baraka_MK2.gif" width="100px">
+                    <h4>
+                        <b>Decapitation:</b> Segure Blk, B, B, B, B, HP (perto).<br>
+                        <b>Stab Lift:</b> B, F, D, F, LP (perto).
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Scorpion</h3>
+                    <img src="MK/Scorpion_MK2.gif" width="100px">
+                    <h4>
+                        <b>Toasty 1:</b> Segure Blk, U, U, HP (um pouco mais longe da distância da rasteira).<br>
+                        <b>Toasty 2:</b> Segure Blk, D, D, U, U, HP (em qualquer lugar).<br>
+                        <b>Spear Slice:</b> Segure HP, D, F, F, F, Solte HP (perto).
+                    </h4>
+                </p>
+                <hr>
+
+                <p>
+                    <h3>Raiden</h3>
+                    <img src="MK/Raiden_MK2.gif" width="100px">
+                    <h4>
+                        <b>Electrocution:</b> Segure LK por 6 segundos e Solte LK Aperte Blk+Lk Rapidamente. (perto).<br>
+                        <b>Uppercut Explosion:</b> Segure HP por 8 segundos e Solte HP (perto).
+                    </h4>
+                </p>
+                <hr>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
